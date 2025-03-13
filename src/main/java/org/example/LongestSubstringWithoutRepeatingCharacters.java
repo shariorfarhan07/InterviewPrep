@@ -1,8 +1,6 @@
 package org.example;
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 public class LongestSubstringWithoutRepeatingCharacters {
@@ -19,7 +17,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
         Set<Character> set = new HashSet<>();
         while (end < s.length()) {
             if (!set.contains(s.charAt(end))) {
-               maxCount = Math.max(maxCount,end-start+1);
+                maxCount = Math.max(maxCount, end - start + 1);
             }
             while (set.contains(s.charAt(end))) {
                 set.remove(s.charAt(start++));

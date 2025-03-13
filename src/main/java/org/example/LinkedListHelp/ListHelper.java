@@ -9,9 +9,9 @@ public class ListHelper {
         System.out.println(head);
     }
 
-    public static ListNode createLinkedList(int [] a) {
+    public static ListNode createLinkedList(int[] a) {
         ListNode head = null;
-        for (int i = a.length-1 ; i >=0; i--) {
+        for (int i = a.length - 1; i >= 0; i--) {
             head = new ListNode(a[i], head);
         }
         return head;

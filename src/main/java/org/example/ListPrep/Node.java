@@ -1,7 +1,5 @@
 package org.example.ListPrep;
 
-import org.example.LinkedListHelp.ListNode;
-
 public class Node {
     public Object val;
     public Node next;

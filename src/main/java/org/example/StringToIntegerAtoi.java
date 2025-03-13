@@ -14,13 +14,13 @@ public class StringToIntegerAtoi {
         long count = 0;
         int i = 0;
         boolean negative = false;
-        while (s.charAt(i) == ' ' ) {
+        while (s.charAt(i) == ' ') {
             i++;
         }
         if (s.charAt(i) == '-') {
             negative = true;
             i++;
-        }else if (s.charAt(i) == '+') {
+        } else if (s.charAt(i) == '+') {
             i++;
         }
         while (i < s.length()) {
@@ -31,16 +31,16 @@ public class StringToIntegerAtoi {
             }
             i++;
         }
-         System.out.println(count);
+        System.out.println(count);
         if (negative) {
             count = -count;
         }
-        if (Integer.MAX_VALUE < count ) {
+        if (Integer.MAX_VALUE < count) {
             return Integer.MAX_VALUE;
         }
-        if (Integer.MIN_VALUE > count ) {
+        if (Integer.MIN_VALUE > count) {
             return -Integer.MIN_VALUE;
         }
-        return (int)( count);
+        return (int) (count);
     }
 }
